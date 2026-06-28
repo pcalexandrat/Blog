@@ -12,6 +12,8 @@
         <h1>Meu blog tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
    <button>❤️<span>0</span></button>
+   <button>👍<span>0</span></button>
+
    <style>
 header {
 background-color: #183C63;
@@ -52,12 +54,15 @@ font-weight: bold;
         
     </main>
     <script>
-        const botao = document.querySelector("button");
+        const botao = document.querySelectorAll("button");
+ botoes.forEach(function(botao) {
 botao.addEventListener("click", botaoClicado);
 function botaoClicado() {
 let texto = botao.querySelector("span");
 texto.textContent++;
 }
+});       
+
 </script>
   
 </body>
